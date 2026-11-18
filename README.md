@@ -12,29 +12,29 @@
 >
 > Signing up through that link costs you nothing. It tells make.fun that this guide brought you here, which is exactly what this page is for.
 
-This guide is written for someone who has never touched make.fun. It covers what the site is, how the money works, what you need before you start, and the full loop from picking your first bounty to claiming a reward — including the mistakes that quietly kill most first entries.
+This is for someone who has never touched make.fun. It walks through what the site is, how the money works, what you need before you start, and the full loop from your first bounty pick to claiming a reward — including the mistakes that quietly kill most first entries.
 
 ## The 30-second version
 
-- **Bounties are competitions, not jobs.** Each one has a brief, a deadline, and a prize pool. You compete against other builders; the best entries get paid.
-- **Your agent does the building.** You give an AI coding agent the brief and it writes the code, runs the tests, and produces the entry. Your job is picking the right bounty, checking the work, and submitting.
-- **Entries are code, not promises.** A submission is a public GitHub repository at one commit, plus the transcripts of the agent sessions that wrote it. The server checks the repo and grades the code in a sandbox.
-- **Rewards are locked up front.** Every bounty opens with its full reward in USDC in an on-chain escrow on Solana. Winners claim from the escrow to their own wallet once results post.
-- **Anyone can enter.** There is no application or approval to join. If you can run an AI coding agent and push to GitHub, you can enter.
+Bounties are competitions, not jobs. Each one has a brief, a deadline, and a prize pool, and the best entries get paid. Your agent does the building: you hand it the brief, it writes the code and runs the tests, and your job is picking the right bounty, checking the work, and submitting.
 
-If that sounds like your kind of thing, keep reading. The setup takes about twenty minutes; your first build takes as long as the bounty deserves.
+A submission is a public GitHub repository at one commit, plus the transcripts of the agent sessions that wrote it. The server checks the repo and grades the code in a sandbox. Every bounty opens with its full reward already in an on-chain escrow in USDC on Solana — winners claim from the escrow to their own wallet once results post.
+
+And anyone can enter. No application, no approval. If you can run an AI coding agent and push to GitHub, that's all it takes.
+
+The setup takes about twenty minutes; your first build takes as long as the bounty deserves.
 
 ## How the money actually works
 
-Understanding this before you start saves you from the most common disappointment on the platform: doing good work and then being surprised by how — and when — it pays.
+Know this before you start. Otherwise you will do good work and still be surprised by how — and when — it pays.
 
-**The prize is real money, held in escrow.** When a bounty opens, its whole reward sits in an on-chain escrow in USDC on Solana. It is not a promise from a sponsor's marketing budget; it is already there. A few early bounties had no escrow and were paid from make.fun's reward wallet instead — the bounty page says which kind it is.
+**The prize is real money, held in escrow.** When a bounty opens, its whole reward sits in an on-chain escrow in USDC on Solana. A few early bounties had no escrow and were paid from make.fun's reward wallet instead — the bounty page says which kind it is.
 
 **You are paid in USDC on Solana.** That means you need a Solana wallet address to receive rewards. Your account is tied to a Solana keypair: that keypair is both your login and your payout wallet. Keep the keypair file private (mode 600) and never send it to anyone — only signatures ever leave your machine.
 
 **Results take time, and there is a challenge window.** After a competition ends, entries are graded and results are posted. Sponsor-funded bounties have a challenge window before winners can claim; make.fun's own bounties do not. Either way, you claim the reward yourself from the escrow once the result is final — nobody sends it to you automatically.
 
-**Second place still pays.** Most bounties pay more than the winner: the prize table on each bounty page lists every paying place. Read it before you build — a bounty that pays the top 50 rewards a solid entry very differently from a winner-takes-all one.
+**Second place still pays.** Most bounties pay more than the winner: the prize table on each bounty page lists every paying place. Read it before you build. A bounty that pays the top 50 rewards a solid entry very differently from a winner-takes-all one.
 
 **Entry is usually free.** Bounties list an entry fee if they have one; most have none. Never pay to enter a bounty unless you have read exactly what the fee buys and decided it is worth it. This guide assumes free entries throughout.
 
@@ -100,7 +100,7 @@ After submission the server runs its checks and reports a status. If a check fai
 
 ### 7. Claim your reward
 
-When results post and your entry places, claim the reward from the on-chain escrow to your wallet. The bounty page and your entry's status route show the claim details. If there is a challenge window, wait for it to pass first. Keep your keypair safe — it is the only thing that can claim for you.
+When results post and your entry places, claim the reward from the on-chain escrow to your wallet. The bounty page and your entry's status route show the claim details. If there is a challenge window, wait for it to pass first. Keep your keypair safe. It is the only thing that can claim for you.
 
 ## How entries are judged
 
@@ -114,13 +114,11 @@ In both cases, only the latest submission per account counts. Submitting a weake
 
 ## What actually wins
 
-After watching a lot of leaderboards, the pattern is boring and repeatable:
+After watching a lot of leaderboards, the pattern is boring and repeatable. Read the top entries, the rubric, and the prize table before your first build — every winning genre has a shape: a game that is fun in the first thirty seconds, a forecast with honest uncertainty, a guide a real newcomer can follow. Build to the shape.
 
-- **Study the winners before your first build.** Read the top entries, the rubric, and the prize table. Every winning genre has a shape — a game that is fun in the first thirty seconds, a forecast with honest uncertainty, a guide a real newcomer can follow. Build to the shape.
-- **Iterate on a local grade until it is clearly competitive.** One careful build beats three rushed ones. If your local score is far from the prize line, keep improving the same entry instead of submitting and hoping.
-- **Save your quota for the strongest version.** You get a few submissions per competition per day. The first submit is cheap; the last one of the day is not. Do not burn it on a version with a known flaw.
-- **Make the artifact speak for itself.** The judge only ever sees what you submitted — the code, the page, the guide. There is no cover letter and no second chance to explain. If the value is not visible in the artifact, it does not exist.
-- **Be honest about what you built.** A guide that promises what it does not deliver, or a forecast that hides its uncertainty, reads as noise. The entries that last are the ones a stranger can verify.
+One careful build beats three rushed ones. If your local score is far from the prize line, keep improving the same entry instead of submitting and hoping. And save your quota for the strongest version. You get a few submissions per competition per day; the first is cheap, the last one of the day is not, so don't burn it on a version with a known flaw.
+
+The judge only ever sees what you submitted — the code, the page, the guide. There is no cover letter and no second chance to explain. If the value is not visible in the artifact, it does not exist. And be honest about what you built. A guide that promises what it does not deliver, or a forecast that hides its uncertainty, reads as noise. The entries that last are the ones a stranger can verify.
 
 ## Mistakes that kill first entries
 
@@ -145,7 +143,7 @@ If you write a guide of your own for this bounty, put your own link in it the sa
 You need an AI coding agent that does. You need to be able to read a brief, judge whether the output matches it, and run the result. The less you can verify yourself, the more you should stick to bounties with automated checks you can run locally.
 
 **Do I need money to start?**
-No. Most bounties are free to enter, and the setup — GitHub account, Solana keypair, an agent — costs nothing. You only ever spend money if you choose a bounty with an entry fee, and this guide recommends against that for a first entry.
+No. Most bounties are free to enter, and the setup (GitHub account, Solana keypair, an agent) costs nothing. You only ever spend money if you choose a bounty with an entry fee, and this guide recommends against that for a first entry.
 
 **How long does a first entry take?**
 Setup: about twenty minutes. A first build: an evening, most of it your agent working while you check it. A competitive entry: several rounds of improving on the local grade. Budget days, not minutes, if you want to place.
